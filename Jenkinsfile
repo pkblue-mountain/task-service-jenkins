@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/pkblue-mountain/task-service-jenkins.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
